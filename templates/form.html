@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	<form name="signup" method="post">
+		<table>
+		<tr><td><label for="username">Username<td><input value = "{{username}}" type="text" name="username" id="username" placeholder="mark3..." /></td></label></td><td><span class="error">{{username_error}}</span></td><tr>
+            
+		<tr><td><label for="password">Password<td><input value = "{{password}}" type="password" name="password" id="password" placeholder="P@$$w0rd..."/></td></label></td><td><span class="error">{{password_error}}</span></td><tr>
+
+		<tr><td><label for="verify-password">Verify Password<td><input value = "{{verify_password}}" type="password" name="verify_password" id="verify-password" placeholder="same as above"/></td></label></td><td><span class="error">{{verify_password_error}}</span></td><tr>
+
+		<tr><td><label for="email">Email (optional)<td><input value = "{{email}}" type="text" name="email" id="email" placeholder="john@email.com"/></td></label></td><td><span class="error">{{email_error}}</span></td><tr>
+
+		<tr><td><input type="submit" /><tr><td>
+		</table>
+	</form>
+
+{% endblock %}
+
